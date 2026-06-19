@@ -11,8 +11,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 DATABASE_URL = os.getenv(
-    "DATABASE_URL",
-    "postgresql://neondb_owner:npg_52TcDNuXnUmy@ep-young-forest-aduoz1ie-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
+    "DATABASE_URL"
 )
 
 if DATABASE_URL.startswith("sqlite"):
